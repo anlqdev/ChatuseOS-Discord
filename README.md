@@ -27,7 +27,7 @@ git clone https://github.com/anlqdev/ChatuseOS-Discord
 cd ChatuseOS-Discord
 python -m pip install -r requirements.txt
 ```
-On file `.env.example`, copy everything inside it. Create a new file named `.env` and paste everything inside. Replace `"Your_Token_Here"` with your token
+On file `.env.example`, copy everything inside it. Create a new file named `.env` and paste everything inside. Replace `"Your_Token_Here"` with your token that you're copied!
 
 After that, execute this:
 ```bash
