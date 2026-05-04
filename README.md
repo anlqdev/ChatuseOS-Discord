@@ -34,6 +34,36 @@ After that, execute this:
 python main.py
 ```
 
+# Commands
+Commands will use prefix `!` like `!help`. You can change it!
+### Use Keyboard
+| Command | Usage | Use for |
+|---|---|---|
+| `!press` | `!press <button>` | Press a single key |
+| `!combo` | `!combo <buttons>` | Press a combination of keys |
+| `!type` | `!type <message>` | Type out a message |
+| `!send` | `!send <message>` | Type out a message and press Enter |
+| `!hold` | `!hold <button>` | Hold a key |
+| `!release` | `!release <button>` | Release a key |
+### Use Mouse
+| Command | Usage | Use for |
+|---|---|---|
+| `!move` | `!move <x> <y>` | Move the mouse to a specific position |
+| `!drag` | `!drag <x> <y>` | Drag the mouse to a specific position |
+| `!click` | `!click` | Perform a left mouse click |
+| `!rclick` | `!rclick` | Perform a right mouse click |
+| `!scroll` | `!scroll <clicks>` | Scroll the mouse wheel |
+| `!midclick` | `!midclick` | Perform a middle mouse click |
+### Windows
+| Command | Usage | Use for |
+|---|---|---|
+| `!focus` | `!focus <window>` | Focus a window by its title |
+### Others
+| Command | Usage | Use for |
+|---|---|---|
+| `!ping` | `!ping` | Ping the bot! |
+| `!help` | `!help <commands>` | See help |
+
 # One more thing...
 I haven't test this before uploading on GitHub. So, if you got any error, report it to me by [make a new Issues](https://github.com/anlqdev/ChatuseOS-Discord/issues/new/choose)! Anyways, if you need support, contact me by [join this Discord server](https://discord.gg/BpwQS556Zj)!
 
