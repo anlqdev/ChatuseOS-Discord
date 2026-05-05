@@ -27,7 +27,7 @@ git clone https://github.com/anlqdev/ChatuseOS-Discord
 cd ChatuseOS-Discord
 python -m pip install -r requirements.txt
 ```
-On file `.env.example`, copy everything inside it. Create a new file named `.env` and paste everything inside. Replace `"Your_Token_Here"` with your token that you're copied!
+Rename file `.env.example` to `.env` and replace `Your_Token_Here` in that file with your token that you're copied!
 
 After that, execute this:
 ```bash
@@ -62,7 +62,7 @@ Commands will use prefix `!` like `!help`. You can change it!
 | Command | Usage | Use for |
 |---|---|---|
 | `!ping` | `!ping` | Ping the bot! |
-| `!help` | `!help <commands>` | See help |
+| `!help` | `!help <commands>` or `!help` | See help. Use `!help` to see all command and `!help <commands>` to see the command |
 
 # One more thing...
 I haven't test this before uploading on GitHub. So, if you got any error, report it to me by [make a new Issues](https://github.com/anlqdev/ChatuseOS-Discord/issues/new/choose)! Anyways, if you need support, contact me by [join this Discord server](https://discord.gg/BpwQS556Zj)!
