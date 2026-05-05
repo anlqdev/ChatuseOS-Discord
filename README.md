@@ -29,10 +29,15 @@ python -m pip install -r requirements.txt
 ```
 Rename file `.env.example` to `.env` and replace `Your_Token_Here` in that file with your token that you're copied!
 
-After that, execute this:
+After that, execute this on Terminal:
 ```bash
 python main.py
 ```
+> [!NOTE]
+> If you use Python 3.13 or above, you will receive `ModuleNotFoundError` because module `audioop` has been removed. You can install it by execute this on Terminal:
+> ```py
+> python -m pip install audioop-lts
+> ```
 
 # Commands
 Commands will use prefix `!` like `!help`. You can change it!
