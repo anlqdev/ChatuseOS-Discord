@@ -6,7 +6,7 @@ Support: Every OS (maybe) and Python 3.10 or above
 > [!CAUTION]
 > By using this, you acknowledge that you are responsible for any potential risks, including your computer being controlled by Discord Bot users, which may also violate Discord policies. Please consider carefully!
 
-> [!NOTE]
+> [!TIP]
 > Run this on VM can safe for your computer
 
 # Installation and Start
