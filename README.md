@@ -74,8 +74,9 @@ Here are all of the command:
 # One more thing...
 I haven't tested this before uploading on GitHub. So, if you got any error, report it to me by [creating a new issue](https://github.com/anlqdev/ChatuseOS-Discord/issues/new/choose)! Anyways, if you need support, contact me by [join this Discord server](https://discord.gg/BpwQS556Zj)!
 
-Thanks!
+This project is inspired by "Chat Uses Windows" videos on YouTube, btw =)))
 
+Thanks!
 
 ---
 Made by An with =)) and <3
