@@ -1,11 +1,11 @@
+input("ATTENTION: By pressing the Enter key, you acknowledge that you are responsible for any potential risks, including your computer being controlled by Discord Bot users, which may also violate Discord policies. Please consider carefully. Press Ctrl + C to exit. Press Enter to continue...")
+
 import discord
 from discord.ext import commands
 import keyboard
 import os
 from dotenv import load_dotenv
 import pyautogui as mouse
-
-input("ATTENTION: By pressing the Enter key, you acknowledge that you are responsible for any potential risks, including your computer being controlled by Discord Bot users, which may also violate Discord policies. Please consider carefully. Press Ctrl + C to exit. Press Enter to continue...")
 
 load_dotenv()
 
@@ -36,13 +36,13 @@ async def combo(ctx, *keys: str):
     await ctx.send(f"Pressed the keys: {', '.join(keys)}")
 
 @bot.command()
-async def type(ctx, *, text: str):
-    '''Type out a message. Example: !type Hello, world!'''
+async def write(ctx, *, text: str):
+    '''Type out a message. Example: !write Hello, world!'''
     keyboard.write(text)
     await ctx.send(f"Typed the text: {text}")
 
 @bot.command()
-async def send(ctx, *, text: str):
+async def wenter(ctx, *, text: str):
     '''Type out a message and press Enter. Example: !send Hello, world!'''
     keyboard.write(text)
     keyboard.press('enter')
@@ -98,11 +98,14 @@ async def midclick(ctx):
 
 @bot.command()
 async def focus(ctx, window:str):
-    '''Focus a window by its title. Example: !focus Notepad'''
-    try:
-        mouse.getWindowsWithTitle(window)[0].activate()
-        await ctx.send(f"Focused the window with title: {window}")
-    except IndexError:
-        await ctx.send(f"No window found with title: {window}")
+    '''Focus a window by its title (Windows only). Example: !focus Notepad'''
+    if os.name == "nt":
+        try:
+            mouse.getWindowsWithTitle(window)[0].activate()
+            await ctx.send(f"Focused the window with title: {window}")
+        except IndexError:
+            await ctx.send(f"No window found with title: {window}")
+    else:
+        await ctx.send(f"Not supported OS (Windows only)")
 
 bot.run(os.getenv("DISCORD_BOT_TOKEN"))
