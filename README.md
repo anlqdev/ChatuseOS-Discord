@@ -7,7 +7,7 @@ Support: Every OS (maybe) and Python 3.10 or above
 > By using this, you acknowledge that you are responsible for any potential risks, including your computer being controlled by Discord Bot users, which may also violate Discord policies. Please consider carefully!
 
 > [!TIP]
-> Run this on VM can safe for your computer
+> Run this on a VM to keep your computer safe.
 
 # Installation and Start
 ### 1. Make a new bot
@@ -27,27 +27,29 @@ git clone https://github.com/anlqdev/ChatuseOS-Discord
 cd ChatuseOS-Discord
 python -m pip install -r requirements.txt
 ```
-Rename file `.env.example` to `.env` and replace `Your_Token_Here` in that file with your token that you're copied!
+Rename file `.env.example` to `.env` and replace `Your_Token_Here` in that file with the token you copied!
 
 After that, execute this on Terminal:
 ```bash
 python main.py
 ```
 > [!NOTE]
-> If you use Python 3.13 or above, you will receive `ModuleNotFoundError` because module `audioop` has been removed. You can install it by execute this on Terminal:
+> If you use Python 3.13 or above, you will receive a `ModuleNotFoundError` because the `audioop` module has been removed. You can install it by executing this on Terminal:
 > ```py
 > python -m pip install audioop-lts
 > ```
 
 # Commands
-Commands will use prefix `!` like `!help`. You can change it!
+Commands will use prefix `!` like `!help`. You can change it in `.env` file!
+
+Here are all of the command:
 ### Use Keyboard
 | Command | Usage | Use for |
 |---|---|---|
 | `!press` | `!press <button>` | Press a single key |
 | `!combo` | `!combo <buttons>` | Press a combination of keys |
-| `!type` | `!type <message>` | Type out a message |
-| `!send` | `!send <message>` | Type out a message and press Enter |
+| `!write` | `!write <message>` | Type out a message |
+| `!wenter` | `!wenter <message>` | Type out a message and press Enter |
 | `!hold` | `!hold <button>` | Hold a key |
 | `!release` | `!release <button>` | Release a key |
 ### Use Mouse
@@ -67,10 +69,10 @@ Commands will use prefix `!` like `!help`. You can change it!
 | Command | Usage | Use for |
 |---|---|---|
 | `!ping` | `!ping` | Ping the bot! |
-| `!help` | `!help <commands>` or `!help` | See help. Use `!help` to see all command and `!help <commands>` to see the command |
+| `!help` | `!help <commands>` or `!help` | Use `!help` to see all commands and `!help <command>` to see specific command details |
 
 # One more thing...
-I haven't test this before uploading on GitHub. So, if you got any error, report it to me by [make a new Issues](https://github.com/anlqdev/ChatuseOS-Discord/issues/new/choose)! Anyways, if you need support, contact me by [join this Discord server](https://discord.gg/BpwQS556Zj)!
+I haven't tested this before uploading on GitHub. So, if you got any error, report it to me by [creating a new issue](https://github.com/anlqdev/ChatuseOS-Discord/issues/new/choose)! Anyways, if you need support, contact me by [join this Discord server](https://discord.gg/BpwQS556Zj)!
 
 Thanks!
 
